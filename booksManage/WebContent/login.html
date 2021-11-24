@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	  <meta charset="utf-8">
+  	  <title>图书馆管理系统</title>
+	  <link rel="stylesheet" type="text/css" href="css/login.css" />
+  </head>
+
+  <body>
+		<h1>&nbsp; </h1>
+		<h3>您好，欢迎使用</h3><br>
+		<h1>图书管理系统</h1><br>
+		<div class="loginFrame">
+			<p class="showTip" title="点击切换到注册界面" id="tip">Login</p>
+			
+			
+			<form name="myform">
+			<div class="inp_redio" id="inp_red">
+				<input type="radio" value="admin" id="admin" name="userType"><label for="admin" title="管理员"></label>
+				<input type="radio" value="stu_user" id="stu_user" name="userType"><label for="stu_user" title="学生用户"></label>
+			</div>
+			<div class="inpGroup">
+			        <span class="loginIco1"></span>
+			        <input type="text" name="uname" placeholder="   UserName" >
+			</div>
+			<br>
+			<div class="inpGroup">
+			    <label>
+			        <span class="loginIco2"></span>
+			        <input type="password" name="upwd" placeholder="  Password" >
+			    </label>
+			</div>
+			<br>
+			<input type="button" value=" 登 入 " class="submit" id="sub">
+		</form>	
+		</div>
+		<div id="particles-js"></div>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+$("#tip").click(function(){
+	changeTip();
+})
+
+function changeTip(){
+	if ("Login"==$("#tip").text()){
+		$("#tip").text("Register");
+		$("#tip").attr("title","点击切换到登入界面");
+		$("#sub").attr("value"," 注 册 ");
+		$("#inp_red").hide()
+
+	}else{
+		$("#tip").text("Login");
+		$("#tip").attr("title","点击切换到注册界面");
+		$("#sub").attr("value"," 登 录 ");
+		$("#inp_red").show();
+	}
+}
+
+$("#sub").click(function(){
+	var uname = $("input[name='uname']").val();
+	var upwd = $("input[name='upwd']").val();
+	var userType = $("input[name='userType']:checked").val()
+	// alert($("form").serialize());
+	// if(null==$("input[name='userType']:checked").val())
+	// 	alert("请选择账户类型"); //undefined==============================
+	postServlet(uname,upwd,userType);
+})
+
+function postServlet(uname,upwd,userType){
+	if(uname==''){
+		alert("用户名不可为空！");
+	}
+	else if(upwd==''){
+		alert("密码不可为空！");
+	}
+	else{
+		if("Login"==$("#tip").text()){
+			if(userType==null)
+				alert("请选择账户类型");
+			else{
+				$.ajax({
+					url:"LoginServlet",
+					type:"post",
+					dataType:"text",
+					data:$("form").serialize(),
+					success:function(result)
+					{	
+						if("1"==result)
+							window.location.href = "main.jsp";
+						else if("0"==result)
+							alert("账号或密码错误！");
+						else
+							alert("系统发生错误！");
+					}
+				})
+			}
+		}else{
+			$.ajax({
+				url:"AddStuUserServlet",
+				type:"post",
+				dataType:"text",
+				data:"uname="+uname+"&upwd="+upwd,
+				success:function(result)
+				{	
+					
+					if("1"==result){
+						alert("注册成功！");
+						changeTip();
+					}
+					else if("0"==result)
+						alert("用户名已存在！请重新输入！");
+					else
+						alert("系统发生错误！");
+				}
+			})
+		}
+	}
+}
+
+document.onkeydown = function (e) { // 回车提交表单
+	var theEvent = window.event || e;
+	var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+	if (code == 13) {
+		var uname = $("input[name='uname']").val();
+		var upwd = $("input[name='upwd']").val();
+		var userType = $("input[name='userType']:checked").val()
+		postServlet(uname,upwd,userType);
+	}
+}
+
+})
+
+
+
+</script>
+<script src="js/particles.min.js" ></script>
+<script src="js/app.js"></script>
+
+  </body>
+</html>
+

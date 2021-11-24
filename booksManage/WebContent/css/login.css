@@ -1,0 +1,187 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	background: url(../images/loginBg.jpg);
+	background-size: 100% 100%;
+}
+h3,h1{text-align: center;}
+h1{color: white;}
+ul, ol{list-style: none;}
+input,button{background: none;border: none;outline: none;-webkit-appearance: none;}
+textarea{resize: none;}
+
+.loginFrame {
+	width: 16.8%;
+	min-width: 200px;
+	margin: 0 auto;
+	position: relative;
+	top: 25%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.showTip{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-bottom: 40px;
+	z-index: 10;
+	cursor: pointer;
+	
+}
+
+.loginFrame .inpGroup{
+	height: 20px;
+	padding: 14px 24px 14px 52px;
+	background: #2a658a;
+	background: rgba(255,255,255,0.1);
+	border-radius: 24px;
+	position: relative;
+}
+
+.loginFrame .inpGroup span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 14px;
+	left: 24px;
+}
+.loginFrame .inpGroup span.loginIco1{
+	background: url(../images/ico1.png);
+}
+.loginFrame .inpGroup span.loginIco2{
+	background: url(../images/ico2.png);
+}
+.loginFrame .inpGroup input{
+	display: block;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	
+}
+.loginFrame .inpGroup input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff; opacity:1; 
+}
+
+.loginFrame .inpGroup input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;opacity:1;
+}
+
+.loginFrame .inpGroup input:-ms-input-placeholder{
+    color: #fff;opacity:1;
+}
+
+.loginFrame .inpGroup input::-webkit-input-placeholder{
+    color: #fff;opacity:1;
+}
+
+.loginFrame .submit{
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	height: 40px;
+	line-height: 38px;
+	text-align: center;
+	border: 1px solid #01d1f2;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+.loginFrame .submit:hover{
+	background: #01d1f2;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+#particles-js{
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.5;
+}
+.inp_redio{
+	width: 100%;
+	text-align: center;	
+}
+
+.inp_redio label{
+	color: white;
+	z-index: 1;
+	position:relative;
+	top: -13px;left: -28px;
+}
+
+/* input[type="radio"]{
+	width:40px;height: 40px;
+	line-height:40px
+	position: relative;
+	border-radius: 50%;
+	color: #fff;
+	background: #2a658a;
+	background: rgba(255,255,255,0.1);
+	margin-left: 10%;
+} */
+#admin+label::before{
+	content: "管";
+	width:40px;height: 40px;
+	line-height:40px;
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 18%;
+	border-radius: 50%;
+	color: #fff;
+	background: #2a658a;
+	background: rgba(255,255,255,0.1);
+}
+#stu_user+label::before{
+	content: "学";
+	width:40px;height: 40px;
+	line-height:40px;
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 25%;
+	border-radius: 50%;
+	color: #fff;
+	background: #2a658a;
+	background: rgba(255,255,255,0.1);
+}
+
+#admin:checked+ label::before {
+	background-color: #01d1f2;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+#stu_user:checked+ label::before {
+	background-color: #01d1f2;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
