@@ -1,0 +1,152 @@
+@font-face {font-family: "iconfont";
+  font-family: "iconfont"; 
+  src: url('~@/static/iconfont/iconfont.ttf'); /* IE9 */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yanzhengma:before {
+  content: "\e78f";
+}
+.icon-bangdingshouji:before {
+  content: "\e618";
+}
+
+.icon-pwd:before {
+  content: "\e600";
+}
+
+.icon-tiwen:before {
+  content: "\e633";
+}
+
+.icon-profileo:before {
+  content: "\e6c3";
+}
+
+.icon-QQ_:before {
+  content: "\e60f";
+}
+
+.icon-mobile:before {
+  content: "\e654";
+}
+
+.icon-shezhi-o:before {
+  content: "\e61b";
+}
+
+.icon-guanyupinduoduo:before {
+  content: "\e602";
+}
+
+.icon-profile_ic_myfamily:before {
+  content: "\e665";
+}
+
+.icon-feedback:before {
+  content: "\e620";
+}
+
+.icon-feedback1:before {
+  content: "\e6f3";
+}
+
+.icon-shoucang-yuanxingtianchong:before {
+  content: "\e742";
+}
+
+.icon-profile:before {
+  content: "\e84f";
+}
+
+.icon-s-feedback-o:before {
+  content: "\e64e";
+}
+
+.icon-pwd1:before {
+  content: "\e601";
+}
+
+.icon-shoucang1:before {
+  content: "\e610";
+}
+
+.icon-go:before {
+  content: "\e617";
+}
+
+.icon-remind:before {
+  content: "\e625";
+}
+
+.icon-MBEfenggeduosetubiao-tixing:before {
+  content: "\e627";
+}
+
+.icon-sousuo:before {
+  content: "\e67a";
+}
+
+.icon-shoucang:before {
+  content: "\e607";
+}
+
+.icon-hotfill:before {
+  content: "\e757";
+}
+
+.icon-back:before {
+  content: "\e662";
+}
+
+.icon-xin:before {
+  content: "\e82a";
+}
+
+.icon-xin2:before {
+  content: "\e82b";
+}
+
+.icon-qa:before {
+  content: "\e64b";
+}
+
+.icon-yooxi:before {
+  content: "\e60d";
+}
+
+.icon-round_favor_fill:before {
+  content: "\e80a";
+}
+
+.icon-hot:before {
+  content: "\e65a";
+}
+
+.icon-hot1:before {
+  content: "\eca8";
+}
+
+.icon-check:before {
+  content: "\e61a";
+}
+
+.icon-iqa:before {
+  content: "\e765";
+}
+
+.icon-my:before {
+  content: "\e604";
+}
+
+.icon-shezhi:before {
+  content: "\e7de";
+}
+

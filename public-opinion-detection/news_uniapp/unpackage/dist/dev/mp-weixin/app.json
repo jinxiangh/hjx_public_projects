@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/tabBar/hot/hot",
+    "pages/tabBar/check/check",
+    "pages/tabBar/QA/QA",
+    "pages/tabBar/my/my"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "舆情查证平台",
+    "navigationBarBackgroundColor": "#F76260",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#F76260",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/hot/hot",
+        "iconPath": "static/img/tabBar/hot.png",
+        "selectedIconPath": "static/img/tabBar/hot-on.png",
+        "text": "热点"
+      },
+      {
+        "pagePath": "pages/tabBar/check/check",
+        "iconPath": "static/img/tabBar/check.png",
+        "selectedIconPath": "static/img/tabBar/check-on.png",
+        "text": "检测"
+      },
+      {
+        "pagePath": "pages/tabBar/QA/QA",
+        "iconPath": "static/img/tabBar/q&a.png",
+        "selectedIconPath": "static/img/tabBar/q&a-on.png",
+        "text": "问答"
+      },
+      {
+        "pagePath": "pages/tabBar/my/my",
+        "iconPath": "static/img/tabBar/my.png",
+        "selectedIconPath": "static/img/tabBar/my-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

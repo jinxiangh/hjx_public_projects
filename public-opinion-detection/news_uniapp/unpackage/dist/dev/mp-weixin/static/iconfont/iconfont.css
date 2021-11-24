@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('~@/static/iconfont/iconfont.ttf'); /* IE9 */
+
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shoucang:before {
+  content: "\e607";
+}
+
+.icon-hotfill:before {
+  content: "\e757";
+}
+
+.icon-back:before {
+  content: "\e662";
+}
+
+.icon-xin:before {
+  content: "\e82a";
+}
+
+.icon-xin2:before {
+  content: "\e82b";
+}
+
+.icon-qa:before {
+  content: "\e64b";
+}
+
+.icon-yooxi:before {
+  content: "\e60d";
+}
+
+.icon-qa1:before {
+  content: "\e659";
+}
+
+.icon-round_favor_fill:before {
+  content: "\e80a";
+}
+
+.icon-hot:before {
+  content: "\e65a";
+}
+
+.icon-hot1:before {
+  content: "\eca8";
+}
+
+.icon-check:before {
+  content: "\e61a";
+}
+
+.icon-iqa:before {
+  content: "\e765";
+}
+
+.icon-my:before {
+  content: "\e604";
+}
+
+.icon-shezhi:before {
+  content: "\e7de";
+}
+

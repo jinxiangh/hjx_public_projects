@@ -1,0 +1,1 @@
+<view><view class="status_bar"></view><page-header vue-id="652d64f3-1" bind:__l="__l"></page-header><view class="news"><news-item vue-id="652d64f3-2" list="{{newsList}}" data-event-opts="{{[['^itemClick',[['goDetail']]]]}}" bind:itemClick="__e" bind:__l="__l"></news-item></view></view>
